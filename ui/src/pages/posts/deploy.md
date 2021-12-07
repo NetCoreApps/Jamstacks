@@ -80,13 +80,15 @@ These secrets are used to populate variables within GitHub Actions and other con
 
 ## UI Deployment
 
-The `ui` application is built and deployed to GitHub Pages during the `release.yml` workflow process by committing the result of `npm run build` to `gh-pages` branch in the repository.
+The `ui` application is built and deployed to GitHub Pages during the `release.yml` workflow process by committing the 
+result of `npm run build` to `gh-pages` branch in the repository.
 
-Variable replacement of `$DEPLOY_API` and `$DEPLOY_CDN` is performed on the following files as a way to coordinate configuration between the `ui` and `api` project.
+Variable replacement of `$DEPLOY_API` and `$DEPLOY_CDN` is performed on the following files as a way to coordinate 
+configuration between the `ui` and `api` project.
 
-- `ui/vite.config.ts` - Configure the backend .NET API URL for Vite Apps to use
-- `ui/next.config.js` - Configure the backend .NET API URL for Next.js Apps to use 
-- `ui/post.build.js` - If exists run from `release.yml` GitHub Action after `npm run build`
+- `ui/vite.config.ts` - Set backend .NET API URL for Vite Apps to use
+- `ui/next.config.js` - Set backend .NET API URL for Next.js Apps to use 
+- `ui/post.build.js` - If exists, run from GitHub Action after `npm run build`
 
 ### post.build.js
 
@@ -101,14 +103,17 @@ const path = require("path")
 const DEPLOY_API = 'https://$DEPLOY_API'
 const DEPLOY_CDN = 'https://$DEPLOY_CDN'
 
-const DIST = '../api/MyApp/wwwroot'
+const DIST = '../api/Jamstacks/wwwroot'
 
-// 404.html SPA fallback (for GitHub Pages, Cloudflare & Netlify)
+// 404.html SPA fallback (supported by GitHub Pages, Cloudflare & Netlify CDNs)
 fs.copyFileSync(
     path.resolve(`${DIST}/index.html`),
     path.resolve(`${DIST}/404.html`))
 
-// define /api proxy routes (supported by Cloudflare & Netlify)
+// Define Virtual Host for GitHub Pages CDN
+fs.writeFileSync(`${DIST}/CNAME`, DEPLOY_CDN)
+
+// Define /api proxy routes (supported by Cloudflare or Netlify CDNs)  
 fs.writeFileSync(`${DIST}/_redirects`,
     fs.readFileSync(`${DIST}/_redirects`, 'utf-8')
         .replace(/{DEPLOY_API}/g, DEPLOY_API))
