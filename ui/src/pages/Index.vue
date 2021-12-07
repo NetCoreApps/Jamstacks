@@ -7,8 +7,9 @@
 
           <div id="empty" class="mt-4 mb-2">
 
-            <h3 class="mt-8 text-6xl md:text-8xl font-bold tracking-tighter leading-tight">Jamstack C# Projects</h3>
-            <p class="my-6 text-xl text-gray-500">Customize &amp; Download a new .NET 6.0 Jamstack Project</p>
+            <h3 class="mt-8 text-6xl md:text-8xl font-bold tracking-tighter leading-tight">C# Jamstack Projects</h3>
+            <p class="my-6 text-xl text-gray-500">Download a new Jamstack UI powered by a .NET 6
+              <a class="underline" href="https://servicestack.net">ServiceStack</a> API</p>
 
             <div class="flex justify-center mb-16">
               <div class="w-70">

@@ -6,7 +6,7 @@
           <div class="p-4 cursor-pointer flex">
             <LogosJamstackIcon class="w-8 h-8 mr-2 mt-0.5" alt="Jamstacks logo" />
             <span class="text-3xl font-bold">Jamstacks</span>
-            <div><span class="ml-2 text-lg font-bold bg-purple-600 text-white py-0.5 px-1.5 rounded">.NET</span></div>
+            <div><div class="ml-2 text-xl bg-purple-600 text-white py-0.5 px-1.5 rounded">.NET</div></div>
           </div>
         </router-link>
       </div>
