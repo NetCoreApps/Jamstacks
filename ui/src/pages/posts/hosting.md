@@ -1,5 +1,7 @@
 ---
-title: Hosting Costs
+title: Jamstack Hosting Costs
+summary: Exploring the cost & scalability benefits of hybrid CDN & .NET Apps
+date: 2021-12-04
 ---
 
 <a href="https://jamstack.org">
