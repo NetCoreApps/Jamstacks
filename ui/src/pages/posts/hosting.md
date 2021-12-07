@@ -1,5 +1,5 @@
 ---
-title: Jamstack Hosting Costs
+title: Jamstack Hosting Costs @ $0.40 /mo
 summary: Exploring the cost & scalability benefits of hybrid CDN & .NET Apps
 date: 2021-12-04
 ---
