@@ -48,7 +48,7 @@ directly from its deployed ASP.NET Core server at:
 
 ### Digital Ocean
 
-### [api.jamstacks.net](https://api.jamstacks.net)
+### [jamstacks.web-templates.io](https://jamstacks.web-templates.io)
 
 But when accessed from the CDN [jamstacks.net](https://jamstacks.net) that contains a 
 copy of its static `/wwwroot` UI assets, only its back-end JSON APIs are used to power its dynamic features.
