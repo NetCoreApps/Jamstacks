@@ -1,0 +1,124 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  @apply bg-indigo-600 opacity-75;
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+}
+
+.btn {
+  @apply px-4 py-1 rounded inline-block
+    bg-indigo-600 text-white cursor-pointer
+    hover:bg-indigo-700
+    disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
+}
+
+.icon-btn {
+  @apply inline-block cursor-pointer select-none
+    opacity-75 transition duration-200 ease-in-out
+    hover:opacity-100 hover:text-indigo-600;
+  font-size: 0.9em;
+}
+
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-thumb{background-color:#f9fafb}
+
+/* 
+ * Dark Mode 
+ * color palette from: https://www.growthbunker.dev/vuedarkmode/
+ */
+
+/* autocomplete styles */
+html.dark input:-webkit-autofill,
+html.dark input:-webkit-autofill:hover,
+html.dark input:-webkit-autofill:focus,
+html.dark input:-webkit-autofill:active {
+  border-color: #0093ee!important;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0 1000px rgba(0,147,238,.4) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+html.dark .prose h1, html.dark .prose h2, html.dark .prose p { color: #fff }
+html.dark .prose h3, html.dark .prose h4, html.dark .prose h5, html.dark .prose th { color: #a9c7df }
+html.dark ::-webkit-scrollbar-thumb{background-color:#313D4F}
+
+html.dark pre, html.dark input {
+  border: 1px solid #313d4f;
+  background-color: #222c3c;
+}
+html.dark input.focus\:border-indigo-500:focus  {
+  border: 1px solid #0093EE
+}
+
+/* tags */
+html.dark code.bg-blue-50,
+html.dark .bg-purple-500,
+html.dark .prose code {
+  background-color: rgba(59, 130, 246, 0.3);
+  border: 1px solid  rgb(147, 197, 253, 0.75);
+  color: rgba(239, 246, 255, .9);
+}
+html.dark .prose pre code {
+  border: none;
+  background-color: unset;
+}
+
+/* primary button */
+html.dark .bg-indigo-600 {
+  background: #0093ee radial-gradient(circle,transparent 1%,#0093ee 1%) center/15000%;
+  color: rgba(249, 250, 251);
+}
+/* secondary button */
+html.dark button.bg-white {
+  background: #25374f radial-gradient(circle,transparent 1%,#25374f 1%) center/15000%;
+  color: #fff;
+}
+html.dark button:hover,
+html.dark a.bg-purple-500:hover {
+  background-color: rgba(59, 130, 246, .5);
+}
+
+html.dark .text-gray-700, html.dark input {
+  color: rgb(243, 244, 246);
+}
+html.dark .text-black {
+  color: #fff
+}
+
+html.dark blockquote,
+html.dark .text-gray-500,
+html.dark figcaption,
+html.dark .prose a,
+html.dark .prose [class~="lead"],
+html.dark .prose ol > li::before {
+  color: #a9c7df
+}
+html.dark .prose a:hover {
+  opacity: .8;
+}
+html.dark .border-red-300 {
+  border-color: #e0102b
+}
+html.dark .divide-gray-200 > * + * {
+  border-color: #0093ee !important;
+}
+html.dark .focus\:ring-indigo-500 {
+  --tw-ring-color: rgba(30, 64, 175, var(--tw-ring-opacity));
+} 
