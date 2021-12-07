@@ -34,6 +34,7 @@
                       <div class="count mt-1 text-gray-400 text-sm"></div>
                     </div>
                   </a>
+                  <a class="text-sm text-center mr-4" href="https://nextjs.jamstacks.net">nextjs.jamstacks.net</a>
                 </div>
                 <div>
                   <a class="archive-url netcoretemplates_grpc" :href="zipUrl('NetCoreTemplates/vue-ssg')">
@@ -49,6 +50,7 @@
                       <div class="count mt-1 text-gray-400 text-sm"></div>
                     </div>
                   </a>
+                  <a class="text-sm text-center mr-4" href="https://vue-ssg.jamstacks.net">vue-ssg.jamstacks.net</a>
                 </div>
               </div>
             </div>
@@ -73,6 +75,7 @@
                     <div class="count mt-1 text-gray-400 text-sm"></div>
                   </div>
                 </a>
+                <a class="text-sm text-center mr-4" href="https://vue-vite.jamstacks.net">vue-vite.jamstacks.net</a>
               </div>
               <div>
                 <a class="archive-url netcoretemplates_empty" :href="zipUrl('NetCoreTemplates/blazor-wasm')">
@@ -88,6 +91,7 @@
                     <div class="count mt-1 text-gray-400 text-sm"></div>
                   </div>
                 </a>
+                <a class="text-sm text-center mr-4" href="https://blazor-wasm.jamstacks.net">blazor-wasm.jamstacks.net</a>
               </div>
             </div>
           </div>
