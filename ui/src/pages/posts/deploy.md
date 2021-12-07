@@ -34,7 +34,7 @@ To let your server handle multiple ServiceStack applications and automate the ge
 
 For example, once copied to remote `~/nginx-proxy-compose.yml`, the following command can be run on the remote server.
 
-```
+```bash
 docker-compose -f ~/nginx-proxy-compose.yml up -d
 ```
 
@@ -123,7 +123,7 @@ Whilst the `_redirects` file is a convention supported by many [popular Jamstack
 that sets up a new rule that proxies `/api*` requests to where the production .NET App is deployed to in order 
 for API requests to not need CORS:
 
-```
+```bash
 /api/*  {DEPLOY_API}/api/:splat  200
 ```
 

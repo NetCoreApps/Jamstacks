@@ -20,6 +20,8 @@ import Components from "unplugin-vue-components/vite"
 import AutoImport from "unplugin-auto-import/vite"
 import Markdown from "vite-plugin-md"
 import Inspect from "vite-plugin-inspect"
+import Prism from "markdown-it-prism"
+import LinkAttributes from "markdown-it-link-attributes"
 
 const isProd = process.env.NODE_ENV === 'production'
 
@@ -102,7 +104,14 @@ export default defineConfig(({ command, mode }) => {
           headEnabled: true,
           markdownItSetup(md) {
             // https://prismjs.com/
-            // md.use(Prism)
+            md.use(Prism)
+            md.use(LinkAttributes, {
+              pattern: /^https?:\/\//,
+              attrs: {
+                target: '_blank',
+                rel: 'noopener',
+              },
+            })
           },
           wrapperComponent: 'MarkdownPage'
         }),
