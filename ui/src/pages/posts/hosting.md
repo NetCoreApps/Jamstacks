@@ -27,7 +27,7 @@ a copy of its static UI generated assets and hosted on:
 
 ### GitHub Pages CDN
 
-### [www.jamstacks.net](https://www.jamstacks.net)
+### [jamstacks.net](https://jamstacks.net)
 
 This is an optional deployment step which publishes a copy of your .NET App's `/wwwroot` folder to this templates 
 [gh-pages](https://github.com/NetCoreApps/Jamstacks/tree/gh-pages) branch where it's automatically served from 
@@ -46,9 +46,9 @@ directly from its deployed ASP.NET Core server at:
 
 ### Digital Ocean
 
-### [jamstacks.net](https://jamstacks.net)
+### [api.jamstacks.net](https://api.jamstacks.net)
 
-But when accessed from the CDN [www.jamstacks.net](https://www.jamstacks.net) that contains a 
+But when accessed from the CDN [jamstacks.net](https://jamstacks.net) that contains a 
 copy of its static `/wwwroot` UI assets, only its back-end JSON APIs are used to power its dynamic features.
 
 ## Total Cost
