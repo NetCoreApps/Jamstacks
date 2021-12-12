@@ -54,7 +54,7 @@ html.dark input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-html.dark .prose h1, html.dark .prose h2, html.dark .prose p, html.dark .prose li, html.dark .prose td { color: #fff }
+html.dark .prose h1, html.dark .prose h2, html.dark .prose p, html.dark .prose li, html.dark .prose td, html.dark .prose strong { color: #fff }
 html.dark .prose h3, html.dark .prose h4, html.dark .prose h5, html.dark .prose th { color: #a9c7df }
 html.dark ::-webkit-scrollbar-thumb{background-color:#313D4F}
 
@@ -104,8 +104,7 @@ html.dark .text-black {
 html.dark blockquote,
 html.dark .text-gray-500,
 html.dark figcaption,
-html.dark .prose 
-a,
+html.dark .prose a,
 html.dark .prose [class~="lead"],
 html.dark .prose ol > li::before {
   color: #a9c7df
