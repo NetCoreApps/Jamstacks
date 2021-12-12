@@ -1,13 +1,9 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  mode: 'jit', // in preview: https://tailwindcss.com/docs/just-in-time-mode
-  purge: {
-    enabled: process.env.NODE_ENV === 'production',
-    content: [
-      "./src/**/*.{vue,md,ts,html}",
-    ]
-  },
+  content: [
+    "./src/**/*.{vue,md,ts,html}",
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
@@ -25,11 +21,6 @@ module.exports = {
           },
         },
       }),      
-    },
-  },
-  variants: {
-    extend: {
-      opacity: ['disabled'],
     },
   },
   plugins: [

@@ -26,7 +26,6 @@ body,
   @apply px-4 py-1 rounded inline-block
     bg-indigo-600 text-white cursor-pointer
     hover:bg-indigo-700
-    disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50;
 }
 
 .icon-btn {
@@ -105,7 +104,8 @@ html.dark .text-black {
 html.dark blockquote,
 html.dark .text-gray-500,
 html.dark figcaption,
-html.dark .prose a,
+html.dark .prose 
+a,
 html.dark .prose [class~="lead"],
 html.dark .prose ol > li::before {
   color: #a9c7df
