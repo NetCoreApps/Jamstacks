@@ -18,7 +18,7 @@
             </p>
 
             <p class="my-6 text-xl text-gray-500">Download a new Jamstack UI .NET 6
-              <a class="underline" href="https://servicestack.net">ServiceStack</a> API project
+              <a class="text-blue-600" href="https://servicestack.net">ServiceStack</a> API project
             </p>
 
             <div class="flex justify-center mb-16">
