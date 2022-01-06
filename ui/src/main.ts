@@ -2,7 +2,7 @@ import "@/styles/index.css"
 import "@/styles/main.css"
 import "@/styles/markdown.css"
 import "markdown-it-prism"
-import "prismjs/components/prism-clike"
+import "prismjs/components/prism-clike.js"
 import { ViteSSG } from "vite-ssg"
 
 // Auto generated routes by https://github.com/hannoeru/vite-plugin-pages 
