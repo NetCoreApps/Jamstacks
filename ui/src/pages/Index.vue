@@ -8,8 +8,18 @@
           <div id="empty" class="mt-4 mb-2">
 
             <h3 class="mt-8 text-6xl md:text-8xl font-bold tracking-tighter leading-tight">C# Jamstack Projects</h3>
-            <p class="my-6 text-xl text-gray-500">Download a new Jamstack UI powered by a .NET 6
-              <a class="underline" href="https://servicestack.net">ServiceStack</a> API</p>
+
+            <p class="my-6 text-xl text-gray-500">
+              Premier
+              <a class="text-blue-600" title="Static Site Generation" href="https://www.freecodecamp.org/news/static-site-generation-with-nextjs/">SSG</a>
+              &amp;
+              <a class="text-blue-600" title="Single-page application" href="https://en.wikipedia.org/wiki/Single-page_application">SPA</a>
+              Web App templates delivering the ultimate Dev &amp; end-user UX
+            </p>
+
+            <p class="my-6 text-xl text-gray-500">Download a new Jamstack UI .NET 6
+              <a class="underline" href="https://servicestack.net">ServiceStack</a> API project
+            </p>
 
             <div class="flex justify-center mb-16">
               <div class="w-70">
