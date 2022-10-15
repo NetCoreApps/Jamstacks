@@ -40,7 +40,11 @@
                         </div>
                       </div>
                       <div class="text-xl font-medium text-gray-700">Next.js</div>
-                      <div class="flex justify-center h-8"></div>
+                      <div class="flex justify-center h-8">
+                        <div class="mr-1">
+                          <span class="px-2 py-0.5 h-8 rounded-lg bg-blue-50 text-blue-500 text-sm">tailwind</span>
+                        </div>
+                      </div>
                       <span class="archive-name px-4 pb-2 text-blue-600 dark:text-indigo-400">{{ projectZip }}</span>
                       <div class="count mt-1 text-gray-400 text-sm"></div>
                     </div>
@@ -56,7 +60,9 @@
                         </div>
                       </div>
                       <div class="text-xl font-medium text-gray-700">Vue SSG</div>
-                      <div class="flex justify-center h-8"></div>
+                      <div class="flex justify-center h-8">
+                        <div class="mr-1"><span class="px-2 py-0.5 h-8 rounded-lg bg-blue-50 text-blue-500 text-sm">tailwind</span></div>
+                      </div>
                       <span class="archive-name px-4 pb-2 text-blue-600 dark:text-indigo-400">{{ projectZip }}</span>
                       <div class="count mt-1 text-gray-400 text-sm"></div>
                     </div>
@@ -80,8 +86,10 @@
                         <SimpleIconsBlazor class="w-14 h-14 text-purple-500" />
                       </div>
                     </div>
-                    <div class="text-xl font-medium text-gray-700">Blazor Tailwind</div>
-                    <div class="flex justify-center h-8"></div>
+                    <div class="text-xl font-medium text-gray-700">Blazor WASM</div>
+                    <div class="flex justify-center h-8">
+                      <div class="mr-1"><span class="px-2 py-0.5 h-8 rounded-lg bg-blue-50 text-blue-500 text-sm">tailwind</span></div>
+                    </div>
                     <span class="archive-name px-4 pb-2 text-blue-600 dark:text-indigo-400">{{ projectZip }}</span>
                     <div class="count mt-1 text-gray-400 text-sm"></div>
                   </div>
@@ -97,7 +105,9 @@
                       </div>
                     </div>
                     <div class="text-xl font-medium text-gray-700">Vue Vite</div>
-                    <div class="flex justify-center h-8"></div>
+                    <div class="flex justify-center h-8">
+                      <div class="mr-1"><span class="px-2 py-0.5 h-8 rounded-lg bg-blue-50 text-blue-500 text-sm">tailwind</span></div>
+                    </div>
                     <span class="archive-name px-4 pb-2 text-blue-600 dark:text-indigo-400">{{ projectZip }}</span>
                     <div class="count mt-1 text-gray-400 text-sm"></div>
                   </div>
@@ -109,11 +119,13 @@
                   <div class="bg-white dark:bg-gray-800 px-4 py-4 mr-4 mb-4 rounded-lg shadow-lg text-center items-center justify-center hover:shadow-2xl dark:border-2 dark:border-pink-600 dark:hover:border-blue-600 dark:border-2 dark:border-pink-600 dark:hover:border-blue-600" style="min-width:150px">
                     <div class="text-center font-extrabold flex items-center justify-center mb-2">
                       <div class="text-4xl text-blue-400 my-3">
-                        <SimpleIconsBlazor class="w-14 h-14 text-purple-500" />
+                        <SimpleIconsBootstrap class="w-14 h-14 text-violet-500" />
                       </div>
                     </div>
                     <div class="text-xl font-medium text-gray-700">Blazor WASM</div>
-                    <div class="flex justify-center h-8"></div>
+                    <div class="flex justify-center h-8">
+                      <div class="mr-1"><span class="px-2 py-0.5 h-8 rounded-lg bg-blue-50 text-blue-500 text-sm">bootstrap</span></div>
+                    </div>
                     <span class="archive-name px-4 pb-2 text-blue-600 dark:text-indigo-400">{{ projectZip }}</span>
                     <div class="count mt-1 text-gray-400 text-sm"></div>
                   </div>
@@ -121,6 +133,33 @@
                 <a class="text-sm text-center mr-4" href="https://blazor-wasm.jamstacks.net">blazor-wasm.jamstacks.net</a>
               </div>
             </div>
+          </div>
+        </section>
+
+
+        <section class="w-full flex flex-col justify-center text-center">
+          <div id="ssr" class="mt-4 mb-2">
+            <h3 class="text-gray-400 text-xl mb-2">SSR Templates</h3>
+            <div class="flex flex-wrap justify-center">
+              <div>
+                <a class="archive-url netcoretemplates_blazor-tailwind" :href="zipUrl('NetCoreTemplates/blazor-server')">
+                  <div class="bg-white dark:bg-gray-800 px-4 py-4 mr-4 mb-4 rounded-lg shadow-lg text-center items-center justify-center hover:shadow-2xl dark:border-2 dark:border-pink-600 dark:hover:border-blue-600 dark:border-2 dark:border-pink-600 dark:hover:border-blue-600" style="min-width:150px">
+                    <div class="text-center font-extrabold flex items-center justify-center mb-2">
+                      <div class="text-4xl text-blue-400 my-3">
+                        <SimpleIconsBlazor class="w-14 h-14 text-purple-500" />
+                      </div>
+                    </div>
+                    <div class="text-xl font-medium text-gray-700">Blazor Server</div>
+                    <div class="flex justify-center h-8">
+                      <div class="mr-1"><span class="px-2 py-0.5 h-8 rounded-lg bg-blue-50 text-blue-500 text-sm">tailwind</span></div>
+                    </div>
+                    <span class="archive-name px-4 pb-2 text-blue-600 dark:text-indigo-400">{{ projectZip }}</span>
+                    <div class="count mt-1 text-gray-400 text-sm"></div>
+                  </div>
+                </a>
+                <a class="text-sm text-center mr-4" href="https://blazor-server.jamstacks.net">blazor-server.jamstacks.net</a>
+              </div>
+          </div>
           </div>
         </section>
 
