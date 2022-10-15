@@ -154,16 +154,19 @@
     "/assets/vendor.27327011.js"
   ],
   "src/layouts/empty.vue": [
-    "/assets/empty.3ecc412e.js"
+    "/assets/empty.e92540b4.js"
+  ],
+  "~icons/simple-icons/bootstrap": [
+    "/assets/Index.3f117824.js"
   ],
   "~icons/simple-icons/blazor": [
-    "/assets/Index.b87e823f.js"
+    "/assets/Index.3f117824.js"
   ],
   "~icons/logos/nextjs-icon": [
-    "/assets/Index.b87e823f.js"
+    "/assets/Index.3f117824.js"
   ],
   "src/pages/Index.vue": [
-    "/assets/Index.b87e823f.js"
+    "/assets/Index.3f117824.js"
   ],
   "~icons/logos/vue": [
     "/assets/vue.aa47ef7d.js"
@@ -208,13 +211,13 @@
     "/assets/MarkdownPage.f8f3da68.js"
   ],
   "~icons/logos/digital-ocean": [
-    "/assets/hosting.19901bca.js"
+    "/assets/hosting.b85d0843.js"
   ],
   "~icons/emojione/money-with-wings": [
-    "/assets/hosting.19901bca.js"
+    "/assets/hosting.b85d0843.js"
   ],
   "src/pages/posts/hosting.md": [
-    "/assets/hosting.19901bca.js"
+    "/assets/hosting.b85d0843.js"
   ],
   "~icons/logos/tailwindcss-icon": [
     "/assets/rider.c52ff349.js"
@@ -232,12 +235,12 @@
     "/assets/vs.a44dd7a7.js"
   ],
   "~icons/mdi/arrow-left-thin": [
-    "/assets/_...all_.21c56c5c.js"
+    "/assets/_...all_.b50697fc.js"
   ],
   "src/pages/[...all].vue?vue&type=route&index=0&lang.yaml": [
-    "/assets/_...all_.21c56c5c.js"
+    "/assets/_...all_.b50697fc.js"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.21c56c5c.js"
+    "/assets/_...all_.b50697fc.js"
   ]
 }
